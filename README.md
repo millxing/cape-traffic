@@ -1,12 +1,12 @@
 # Cape Traffic
 
-Hourly Google Maps drive-time estimates between Brookline, MA and Chatham, MA, both directions, collected 24/7 via GitHub Actions.
+Half-hourly Google Maps drive-time estimates between Brookline, MA and Chatham, MA, both directions, collected 24/7 via GitHub Actions.
 
 ## How it works
 
 - [collect.py](collect.py) calls the Google Routes API (`computeRoutes`, `TRAFFIC_AWARE`) once per direction and appends two rows to [data/travel_times.csv](data/travel_times.csv).
-- [.github/workflows/collect.yml](.github/workflows/collect.yml) runs it hourly at :07 UTC and commits the updated CSV.
-- ~1,440 API calls/month — within the Routes API free tier (10,000/month).
+- [.github/workflows/collect.yml](.github/workflows/collect.yml) runs it every half hour at :07 and :37 UTC and commits the updated CSV.
+- ~2,880 API calls/month — within the Routes API free tier (10,000/month).
 
 ## Data columns
 
