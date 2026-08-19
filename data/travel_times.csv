@@ -1,0 +1,3 @@
+timestamp_utc,timestamp_eastern,day_of_week,direction,duration_traffic_sec,duration_static_sec,distance_meters,route
+2026-08-19T21:45:13Z,2026-08-19T17:45:13-0400,Wednesday,brookline_to_chatham,7630,6647,142851,MA-3 S and US-6 E
+2026-08-19T21:45:13Z,2026-08-19T17:45:13-0400,Wednesday,chatham_to_brookline,7128,6882,143282,US-6 W and MA-3 N
