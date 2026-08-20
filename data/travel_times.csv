@@ -33,3 +33,5 @@ timestamp_utc,timestamp_eastern,date_est,time_est,day_of_week,direction,duration
 2026-08-20T11:34:56Z,2026-08-20T07:34:56-0400,2026-08-20,07:34 AM,Thursday,chatham_to_brookline,8090,6820,149011,US-6 W and MA-3 N
 2026-08-20T11:57:15Z,2026-08-20T07:57:15-0400,2026-08-20,07:57 AM,Thursday,brookline_to_chatham,8001,6647,142851,MA-3 S and US-6 E
 2026-08-20T11:57:15Z,2026-08-20T07:57:15-0400,2026-08-20,07:57 AM,Thursday,chatham_to_brookline,8050,6820,149011,US-6 W and MA-3 N
+2026-08-20T13:04:21Z,2026-08-20T09:04:21-0400,2026-08-20,09:04 AM,Thursday,brookline_to_chatham,7829,6647,142851,MA-3 S and US-6 E
+2026-08-20T13:04:21Z,2026-08-20T09:04:21-0400,2026-08-20,09:04 AM,Thursday,chatham_to_brookline,8054,6820,149011,US-6 W and MA-3 N
