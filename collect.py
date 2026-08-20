@@ -26,6 +26,8 @@ CSV_PATH = Path(__file__).parent / "data" / "travel_times.csv"
 CSV_COLUMNS = [
     "timestamp_utc",
     "timestamp_eastern",
+    "date_est",
+    "time_est",
     "day_of_week",
     "direction",
     "duration_traffic_sec",
@@ -84,6 +86,8 @@ def main():
         rows.append({
             "timestamp_utc": now_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "timestamp_eastern": now_east.strftime("%Y-%m-%dT%H:%M:%S%z"),
+            "date_est": now_east.strftime("%Y-%m-%d"),
+            "time_est": now_east.strftime("%I:%M %p"),
             "day_of_week": now_east.strftime("%A"),
             "direction": direction,
             **result,
