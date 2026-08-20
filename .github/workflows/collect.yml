@@ -2,8 +2,10 @@ name: Collect travel times
 
 on:
   schedule:
-    # Every half hour at :07 and :37 (GitHub delays jobs scheduled at :00; offset improves reliability)
-    - cron: "7,37 * * * *"
+    # Target cadence is one sample per ~30 min. GitHub's scheduler silently drops
+    # runs under load (~50% observed), so we over-schedule at 15-min intervals as
+    # insurance. Off-peak minutes chosen to avoid the congested :00/:15/:30/:45 slots.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}
 
 permissions:

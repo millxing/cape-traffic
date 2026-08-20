@@ -5,8 +5,8 @@ Half-hourly Google Maps drive-time estimates between Brookline, MA and Chatham, 
 ## How it works
 
 - [collect.py](collect.py) calls the Google Routes API (`computeRoutes`, `TRAFFIC_AWARE`) once per direction and appends two rows to [data/travel_times.csv](data/travel_times.csv).
-- [.github/workflows/collect.yml](.github/workflows/collect.yml) runs it every half hour at :07 and :37 UTC and commits the updated CSV.
-- ~2,880 API calls/month — within the Routes API free tier (10,000/month).
+- [.github/workflows/collect.yml](.github/workflows/collect.yml) is scheduled every 15 minutes (:07, :22, :37, :52 UTC) and commits the updated CSV. GitHub's scheduler drops runs under load, so the effective cadence is roughly every 15–35 minutes.
+- Up to ~5,760 API calls/month — within the Routes API free tier (10,000/month).
 
 ## Data columns
 
