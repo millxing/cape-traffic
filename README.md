@@ -14,6 +14,8 @@ Half-hourly Google Maps drive-time estimates between Brookline, MA and Chatham, 
 |---|---|
 | `timestamp_utc` | Sample time, UTC |
 | `timestamp_eastern` | Sample time, America/New_York |
+| `date_est` | Eastern date (YYYY-MM-DD) |
+| `time_est` | Eastern time, 12-hour with AM/PM |
 | `day_of_week` | Day name in Eastern time |
 | `direction` | `brookline_to_chatham` or `chatham_to_brookline` |
 | `duration_traffic_sec` | Drive time with live traffic (seconds) |
